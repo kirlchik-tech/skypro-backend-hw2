@@ -34,7 +34,7 @@ const server = http.createServer((request, response) => {
     const filePath = path.join(__dirname, 'data', 'users.json');
     fs.readFile(filePath, 'utf8', (err, data) => {
       if (err) {
-        // Если файла нет или ошибка чтения файла
+        // Если файла нет или ошибка чтения 
         response.writeHead(500, { 'Content-Type': 'text/plain' });
         response.end('');
         return;
