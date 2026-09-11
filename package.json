@@ -1,0 +1,15 @@
+{
+  "name": "@skypro-web-developer/backend-02-template",
+  "version": "1.0.0",
+  "description": "Шаблон для выполнения второго домашнего задания",
+  "private": true,
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "author": "",
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
