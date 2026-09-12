@@ -2,7 +2,6 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
-// Порт берется из переменной окружения, либо используется 3003
 const PORT = process.env.PORT || 3003;
 
 const server = http.createServer((request, response) => {
@@ -34,7 +33,6 @@ const server = http.createServer((request, response) => {
     const filePath = path.join(__dirname, 'data', 'users.json');
     fs.readFile(filePath, 'utf8', (err, data) => {
       if (err) {
-        // Если файла нет или ошибка чтения 
         response.writeHead(500, { 'Content-Type': 'text/plain' });
         response.end('');
         return;
@@ -50,7 +48,6 @@ const server = http.createServer((request, response) => {
   response.end('');
 });
 
-// Запуск сервера
 server.listen(PORT, () => {
   console.log(`Сервер запущен на порту ${PORT}`);
 });
