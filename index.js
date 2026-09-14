@@ -27,7 +27,7 @@ const server = http.createServer((request, response) => {
   }
 
   if (params.has('users')) {
-    const filePath = path.join(__dirname, 'data', 'users.json');
+    const filePath = path.join(__dirname, 'src', 'data', 'users.json');
     fs.readFile(filePath, 'utf8', (err, data) => {
       if (err) {
         response.writeHead(500, { 'Content-Type': 'text/plain' });
