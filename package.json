@@ -1,15 +1,22 @@
 {
   "name": "@skypro-web-developer/backend-02-template",
   "version": "1.0.0",
-  "description": "Шаблон для выполнения второго домашнего задания",
+  "description": "Шаблон для выполнения третьего домашнего задания",
   "private": true,
+  "type": "module",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index.js"
-  },
+  "start": "node app.js",
+  "dev": "nodemon app.js"
+},
   "author": "",
   "devDependencies": {
     "nodemon": "^3.1.14"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.4",
+    "express": "^5.2.1",
+    "mongoose": "^9.10.2"
   }
 }
